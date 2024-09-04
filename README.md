@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 28/8/2024
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: YENDLURI CHANDANA
+###  ROLL NO : 212223100063
+###  DEPARTMENT: CSE(CYBER SECURITY)
 
 
 # EXPERIMENT--02-INTERFACING-A-DIGITAL-INPUT-TO-IOT-DEVELOPMENT-BOARD-
@@ -77,11 +77,35 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 
 
 ## STM 32 CUBE PROGRAM :
+```
+//Header file
+#include "main.h"
+#include"stdbool.h"
+bool IRstatus;
 
+//While loop
 
+ while ()
+  {
+      if(IRstatus==1)
+      {
+    	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0,GPIO_PIN_RESET);
+    	 HAL_Delay(1000);
+
+    	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+    	 HAL_Delay(1000);
+      }
+      else
+      {
+    	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+    	 HAL_Delay(1000);
+      }
+  }
+```
 
 ## Output  :
- 
+ ![image](https://github.com/user-attachments/assets/920d7338-8bc4-428c-b0a2-066818a779a8)
+
  
  
  
